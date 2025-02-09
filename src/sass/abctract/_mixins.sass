@@ -1,0 +1,36 @@
+
+@mixin text-strong
+    @include first-letter
+    text-align: justify
+    
+
+@mixin body-color
+    background: $linear-gradient-main
+
+@mixin border-shadow
+    border: .3rem solid $border-color-nav
+    border-radius: 1em
+    padding: .3rem 0
+
+@mixin line
+    border-top: .5rem solid $separation-line-color
+    margin: 2rem auto
+
+@mixin hover-card
+    &:hover
+        background: $green-color
+
+@mixin first-letter
+    font-size: 2.5rem
+    text-indent: 5rem
+    line-height: 3.8rem
+    letter-spacing: .05rem
+    &::first-letter
+        color: red
+        font-size: 4rem
+        text-transform: uppercase
+
+@mixin hover-white
+    &:hover
+        color: $white-color
+
